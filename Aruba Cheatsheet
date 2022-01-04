@@ -1,0 +1,11 @@
+###Konfiguration starten##
+configure
+
+###VLAN auf Port hinzufügen (untagged)###
+interface <interface_id>
+vlan access <vlan_id>
+
+###VLAN auf Port hinzufügen (tagged)###
+interface <interface_id>
+vlan access <vlan_id>
+vlan trunk allowed <vlan_id>
