@@ -1,0 +1,19 @@
+###VLAN von Port entfernen###
+a.) no vlan <vlan_id> members port <port_id>
+b.) vlan <vlan_id> 802.1q <port_id>
+
+###VLAN auf Port hinzufügen (tagged)###
+a.) vlan <vlan_id> members port <port_id> tagged
+b.) vlan <vlan_id> 802.1q <port_id>
+
+###VLAN hinzufügen (untagged)###
+a.) vlan <vlan_id> members port <port_id> untagged
+b.) vlan <vlan_id> port default <port_id>
+
+###Zugewiesene VLAN eines Ports ausgeben###
+a.) show vlan members port <port_id>
+b.) show vlan port <port_id>
+
+###Alias Port Beschreibung Übersicht###
+a.) show interface alias
+b.) show interfaces port
